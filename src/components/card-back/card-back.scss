@@ -1,0 +1,51 @@
+.card-back{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-height: 200px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background: #bdc3c7;  
+    background: -webkit-linear-gradient(to right, #2f4a65e6, #bdc3c7);  
+    background: linear-gradient(to right, #eceef1, #bdc3c7); 
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.454);
+
+    @media (max-width:600px){
+        max-width: 80%;
+        margin: 0 auto;
+     }
+
+     
+    .card-band{
+        background-color: #2F2F2D;
+        height: 40px;
+        margin-top: 1rem;
+    }
+
+    .card-grey-band{
+        display: flex;
+        align-items: center;
+        padding-right: 1rem;
+        color: white;
+        justify-content: flex-end;
+        background-color: #ACB6BF;
+        border-radius: 5px;
+        height: 30px;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 15px;
+        
+        p{
+            font-size: .6rem;
+            color: grey;
+        }
+    }
+}

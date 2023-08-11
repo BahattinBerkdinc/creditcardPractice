@@ -1,0 +1,85 @@
+.App{
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgba(211, 211, 211, 0.452);
+  padding-right: 1rem;
+
+  @media (max-width: 600px) {
+      height: auto;
+      padding: 0;
+  }
+}
+
+.card-page{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    gap: 10rem;
+
+    @media (max-width: 1440px) {
+        flex-direction: column;
+        gap: 3rem;
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+            gap: 3rem;
+            .cardfront{
+                position: static!important;
+            }
+            .cardback{
+                position: static!important;
+            }
+            .layout-gradient{
+                position: absolute;
+                inset: 0 0 0 0!important;
+                background: #ad5389;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+            }
+        }
+    }
+
+    
+
+    
+
+    .left{
+        flex: 1;
+        position: relative;
+        display: flex;
+
+        .cardfront{
+            position: absolute;
+            top: 20%;
+            right: 0;
+        }
+        .cardback{
+            position: absolute;
+            bottom: 30%;
+            right: -100px;
+        }
+
+        .layout-gradient{
+            position: absolute;
+            inset: 0 20% 0 0;
+            background: #ad5389;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        align-self: center;
+    }
+}
