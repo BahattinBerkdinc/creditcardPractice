@@ -1,12 +1,12 @@
 import React from 'react'
 import "./card-back.scss"
 
-const CardBack = () => {
+const CardBack = ({cvcNumber}) => {
   return (
     <div className='card-back'>
       <div className="card-band"></div>
       <div className="card-grey-band">
-        000
+        {cvcNumber}
       </div>
       <div className="card-text">
         <p>Lorem, ipsum dolor.</p>
